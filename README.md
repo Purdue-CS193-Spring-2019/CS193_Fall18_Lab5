@@ -36,7 +36,7 @@ After running that command, if you run ``connect`` you will be prompted for your
 
 #### .bashrc
 The .bashrc file is located in your home directory and is just a script which gets run everytime you open a new instance of bash.
-Go to your home directory and open up your .bashrc with your favorite text editor and put `alias connect="ssh data.cs.purdue.edu"` at the very bottom.
+Go to your home directory and run `ls -a` to view hidden files. Then, open up your .bashrc with your favorite text editor and put `alias connect="ssh data.cs.purdue.edu"` at the very bottom.
 
 Now run `source .bashrc` in your home directory to restart the bash script. Now you can run `connect` and be able to ssh!
 
