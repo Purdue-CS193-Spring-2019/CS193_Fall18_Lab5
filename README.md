@@ -38,11 +38,46 @@ After running that command, if you run ``connect`` you will be prompted for your
 The .bashrc file is located in your home directory and is just a script which gets run everytime you open a new instance of bash.
 Go to your home directory and run `ls -a` to view hidden files. Then, open up your .bashrc with your favorite text editor and put `alias connect="ssh data.cs.purdue.edu"` at the very bottom.
 
-Now run `source .bashrc` in your home directory to restart the bash script. Now you can run `connect` and be able to ssh!
+Run `source .bashrc` in your home directory to restart the bash script. Now you can run `connect` and be able to ssh!
+
+#### SCP - Secure copy
+Secure copy (scp) allows us to copy files from our local machines to a remote server (or vise versa) all through the terminal! It's a great way to transfer files for labs or homeworks. The command to transfer a file from your remote server to your local machine is this: 
+
+```
+scp username@remotehost.edu:~/directory/file.txt ~/some/local/directory
+```
+And to transfer a file from your local machine to a remote server looks like this: 
+```
+scp ~/some/local/directory username@remotehost.edu:~/directory/file.txt 
+```
 
 ## Tasks:
-Make two aliases in your .bashrc. Put the alias in answers.txt and describe what each of them do and how they are helpful.
+Enter all answers in answers.txt. 
 
+1. Make two aliases in your .bashrc. Put the alias in answers.txt and describe what each of them do and how they are helpful.
+
+2. I want to transfer a file called `homework.java` located in `~/cs180` on my local machine to my home directory on the purdue servers. What command should I run? 
+
+#### Review: 
+3. What's the difference between git and github?
+
+4. What command uploads your changes and code back to GitHub?
+
+5. What command tells you your current state of your repo? 
+
+6. Enter the following vim commands (the first one is done for you):
+
+   a. Insert: i
+   
+   b. Return to Normal Mode: 
+   
+   c. Quit: 
+   
+   d. Save: 
+   
+   e. Quit and save:
+   
+   f. Force Quit:
 
 #### How to Submit:
 Commit and push answers.txt!
