@@ -48,7 +48,7 @@ scp username@remotehost.edu:~/directory/file.txt ~/some/local/directory
 ```
 And to transfer a file from your local machine to a remote server looks like this: 
 ```
-scp ~/some/local/directory username@remotehost.edu:~/directory/file.txt 
+scp ~/some/local/directory/file.txt username@remotehost.edu:~/directory
 ```
 
 ## Tasks:
